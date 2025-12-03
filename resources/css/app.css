@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .py-navbar-item {
+    @apply py-6
+  }
+
+  .pt-navbar-item {
+    @apply pt-6
+  }
+
+  .pb-navbar-item {
+    @apply pb-6
+  }
+
+  .px-navbar-item {
+    @apply px-3
+  }
+
+  .pl-navbar-item {
+    @apply pl-3
+  }
+
+  .pr-navbar-item {
+    @apply pr-3
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply text-white bg-[#0295db] py-2 px-4 rounded-full shadow-md hover:bg-[#007bb5] active:bg-[#005f8d] transition-colors;
+  }
+}
+
+body {
+  background-color: #e0e5e9;
+}
+
+
+.wysiwyg-content > blockquote,
+.wysiwyg-content > dl,
+.wysiwyg-content > dd,
+.wysiwyg-content > h1,
+.wysiwyg-content > h2,
+.wysiwyg-content > h3,
+.wysiwyg-content > h4,
+.wysiwyg-content > h5,
+.wysiwyg-content > h6,
+.wysiwyg-content > hr,
+.wysiwyg-content > figure,
+.wysiwyg-content > p,
+.wysiwyg-content > pre {
+  margin: revert;
+}
+
+.wysiwyg-content > ol,
+.wysiwyg-content > ul {
+  list-style: revert;
+  margin: revert;
+  padding: revert;
+}
+
+.wysiwyg-content > table {
+  border-collapse: revert;
+}
+
+.wysiwyg-content > h1,
+.wysiwyg-content > h2,
+.wysiwyg-content > h3,
+.wysiwyg-content > h4,
+.wysiwyg-content > h5,
+.wysiwyg-content > h6 {
+  font-size: revert;
+  font-weight: revert;
+}
+
+.table > tbody > tr > td,
+.table > thead > tr > th {
+  padding: 0.5rem;
+}
+
+.table-sm > tbody > tr > td,
+.table-sm > thead > tr > th {
+  padding: 0.25rem;
+}
+
+.category-list > .category-item:hover > .category-list {
+  display: flex;
+  color:#9d9da1 ;
+}
+
+.category-list > .category-item > .category-list > .category-item > .category-list {
+  left: 100%;
+  top: 0;
+  color:#9d9da1 ;
+}
